@@ -1,0 +1,69 @@
+.card {
+  box-shadow: 0 10px 20px 5px rgba(252, 2, 165, 2);
+  max-width: 300px;
+  max-height: 500px;
+  width: 40%;
+  padding: 25px 20px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #baf1f6;
+}
+
+.card img[src*="picasion.com"] {
+  height: 25px;
+  width: auto;
+  max-width: 80%;   /* ne dépasse jamais la largeur de la card */
+    margin-top: -5px;   /* décale vers le bas */
+}
+.star-card img {
+    margin-top: 50px;   /* décale vers le bas */
+  width: 300px !important;       /* largeur de l’image */
+  height: 250px !important;      /* hauteur de l’image */
+    object-position: center; /* centre l’image */
+  object-fit: cover;  /* pour que l’image remplisse le cadre */
+  clip-path: ellipse(50% 35% at 50% 50%);
+}
+
+.card img {
+	max-width: 80%;   /* ne dépasse jamais la largeur de la card */
+  width: auto;   /* ajuste la largeur comme tu veux */
+  height: 150px;   /* garde les proportions */
+  border-radius: 10px; /* optionnel, arrondir un peu */
+    margin-top: 10px;   /* décale vers le bas */
+}
+
+.h1 {
+	font-family: Snell Roundhand, cursive;
+	/*font-family: "Comic Sans MS", cursive;*/
+	color: black;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.55);
+    margin-top: -10px;   /* décale vers le bas */
+}
+
+.p {
+	font-family: Courier New, monospace;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #d284f6;
+}
+
+.card a i:hover {
+    transform: rotate(20deg);  /* tourne légèrement */
+    color: #f902e3;
+}
+
+body {
+  display: flex;
+  justify-content: center; /* centre horizontalement */
+  align-items: center;     /* centre verticalement */
+  height: 100vh;           /* prend toute la hauteur de l’écran */
+  margin: 0;               /* enlève la marge par défaut du body */
+  background-color:#f7f39e;
+}
+
